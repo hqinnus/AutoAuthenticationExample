@@ -1,225 +1,0 @@
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/CalendarViewController.h,42
-@interface CalendarViewController 12,158
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/CalendarViewController.m,97
-- (void)didReceiveMemoryWarning 46,1174
-- (void)viewDidUnload 53,1375
-- (void)dealloc 60,1518
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/ClassGroup.h,30
-@interface ClassGroup 13,198
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/ClassGroup.m,422
-@synthesize name;13,173
-@synthesize slots;14,191
-@synthesize frequency;15,210
-@synthesize selected;16,233
--(id)initWithName:(NSString*)naming WithSlots:(NSArray*)slot WithFrequency:(NSNumber*)freq WithSelected:initWithName:WithSlots:WithFrequency:WithSelected:18,256
--(void)encodeWithCoder:31,509
--(id)initWithCoder:39,746
--(BOOL)checkSelected47,1053
-- (void) showContents56,1148
--(void)dealloc{dealloc69,1480
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/ConstantFile.h,63
-#define LANG_CHINESE 11,125
-#define FREQUENCY_INVALID 12,157
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/iPlanAppDelegate.h,71
-@class iPlanViewController;11,152
-@interface iPlanAppDelegate 13,181
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/iPlanAppDelegate.m,533
-@synthesize window;21,361
-@synthesize viewController;22,381
-@synthesize tabBarController;23,409
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:application:didFinishLaunchingWithOptions:29,492
-- (void)applicationWillResignActive:56,1592
-- (void)applicationDidEnterBackground:64,2108
-- (void)applicationWillEnterForeground:72,2531
-- (void)applicationDidBecomeActive:79,2769
-- (void)applicationWillTerminate:86,3043
-- (void)applicationDidReceiveMemoryWarning:97,3275
-- (void)dealloc 104,3492
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/IPlanUtility.h,32
-@interface IPlanUtility 13,183
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/IPlanUtility.m,97
-+ (NSNumber*) weekOfDayStringToNSNumber:13,178
-+ (NSNumber*) frequencyStringToNSNumber:49,1009
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/iPlanViewController.h,39
-@interface iPlanViewController 11,155
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/iPlanViewController.m,97
-- (void)didReceiveMemoryWarning 49,1102
-- (void)viewDidUnload 56,1293
-- (void)dealloc 62,1403
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/ModelLogic.h,30
-@interface ModelLogic 13,203
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/ModelLogic.m,190
-@synthesize timetables;13,173
--(id)initWithTimeTables:15,198
--(void)addTimeTable:33,427
-- (NSArray*) getAllModuleNameList38,509
--(id)initWithCoder:44,554
--(void)dealloc{dealloc51,706
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/Module.h,26
-@interface Module 13,205
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/Module.m,802
-@synthesize code;13,161
-@synthesize description;14,179
-@synthesize title;15,204
-@synthesize examinable;16,223
-@synthesize openBook;17,247
-@synthesize examDate;18,269
-@synthesize moduleCredit;19,291
-@synthesize prerequisite;20,317
-@synthesize preclusion;21,343
-@synthesize workload;22,367
-@synthesize remarks;23,389
-@synthesize lastUpdated;24,410
-@synthesize selected;25,435
-@synthesize moduleClassTypes;26,457
-WithModuleClassType:initWithDescription:WithCode:WithTitle:WithExaminable:WithOpenBook:WithExamDate:WithCredit:WithPrerequisite:WithPreclusion:WithWorkload:WithRemark:WithLastUpdate:WithSelected:WithModuleClassType:41,919
--(void)encodeWithCoder:64,1330
--(id)initWithCoder:81,2124
--(BOOL)checkSelected101,3101
--(void)dealloc{dealloc110,3196
-- (void) showContents127,3521
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/ModuleClassType.h,35
-@interface ModuleClassType 13,209
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/ModuleClassType.m,255
-@synthesize name;13,188
-@synthesize classGroups;14,206
--(id)initWithName:(NSString*)naming WithGroups:initWithName:WithGroups:16,232
--(void)encodeWithCoder:27,394
--(id)initWithCoder:33,539
-- (void) showContents40,737
--(void)dealloc{dealloc51,990
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/ModuleListViewController.h,44
-@interface ModuleListViewController 12,160
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/ModuleListViewController.m,97
-- (void)didReceiveMemoryWarning 46,1180
-- (void)viewDidUnload 53,1381
-- (void)dealloc 60,1524
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/ModuleXMLParser.h,35
-@interface ModuleXMLParser 16,286
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/ModuleXMLParser.m,768
-@synthesize currentProperty;14,212
-@synthesize currentModule;16,271
-@synthesize currentTimeTableSlot;17,298
-@synthesize modulesParser;18,332
-- (id) initWithURLStringAndParse:21,386
-- (id) delegate48,1306
-- (void) setDelegate:53,1371
-- (void)parser:(NSXMLParser *)parser foundCharacters:parser:foundCharacters:59,1470
-- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:parser:didStartElement:namespaceURI:qualifiedName:attributes:75,1994
-- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:parser:didEndElement:namespaceURI:qualifiedName:122,4101
-- (void) dealloc369,15325
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/SettingsViewController.h,42
-@interface SettingsViewController 12,158
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/SettingsViewController.m,97
-- (void)didReceiveMemoryWarning 46,1174
-- (void)viewDidUnload 53,1375
-- (void)dealloc 60,1518
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/Slot.h,24
-@interface Slot 12,175
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/Slot.m,288
-@synthesize venue;13,155
-@synthesize day;14,174
-@synthesize startTime;15,191
-@synthesize endTime;16,214
-@synthesize groupName;17,235
-@synthesize frequency;18,258
--(void)encodeWithCoder:35,678
--(id)initWithCoder:43,923
-- (void) showContents52,1375
--(void)dealloc{dealloc64,1792
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/TimeTable.h,29
-@interface TimeTable 13,199
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/TimeTable.m,1475
--(BOOL)TimeTable(BOOL)14,168
-@synthesize name;56,1775
-@synthesize modules;57,1793
--(id)initWithName:59,1815
--(id)initWithName:(NSString*)naming WithModules:initWithName:WithModules:70,1968
-								 WithModuleIndex:getOneDefaultSolutionsWithCurrentProgress:WithBasicInformation:WithAddInClassGroupInformation:WithTimeTable:WithResult:WithModuleIndex:87,2447
-					   WithModuleIndex:nextToAddInToBasedOn:AndBasicInformation:WithModuleIndex:160,4484
-					   WithModuleIndex:nextToTryBasedOn:AndBasicInformation:WithModuleIndex:200,5871
-					  WithBasicInformation:checkPossibilityWithCurrentProgress:WithAddInClassGroupInformation:WithTimeTable:WithBasicInformation:221,6751
-				  WithCurrentTimetable:checkCurrentWithAddInClassGroup:WithCurrentTimetable:241,7288
-				 WithBasicInformation:checkFutureWithAddInClassGroup:WithCurrentTimetable:WithCurrentProgress:WithBasicInformation:268,8219
--(BOOL)checkConflictSlot:(Slot*)slot WithCurrentTimetable:checkConflictSlot:WithCurrentTimetable:305,9210
-	WithTimeTable:addGroup:WithTimeTable:311,9372
-	WithTimeTable:deleteGroup:WithTimeTable:316,9482
--(NSMutableArray*)constructInitialCurrentProgress320,9530
--(NSMutableArray*)constructBasicInformation340,10120
--(NSMutableArray*)constructInitialTimeTable361,10749
--(NSMutableArray*)constructResult379,11104
--(NSMutableArray*)constructModuleIndex402,11635
--(void)encodeWithCoder:419,11942
--(id)initWithCoder:427,12082
--(void)dealloc{dealloc435,12278
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/XMLFaculty.h,30
-@interface XMLFaculty 13,178
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/XMLFaculty.m,54
-@synthesize modules;14,173
-- (void)addModule:16,195
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/XMLModule.h,29
-@interface XMLModule 12,183
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/XMLModule.m,471
-@synthesize code;14,170
-@synthesize title;15,188
-@synthesize description;16,207
-@synthesize examinable;17,232
-@synthesize open_book;18,256
-@synthesize exam_date;19,279
-@synthesize mc;20,302
-@synthesize prereq;21,318
-@synthesize workload;22,338
-@synthesize remarks;23,360
-@synthesize last_updated;24,381
-@synthesize preclude;25,407
-@synthesize timeTableSlots;26,429
-- (void)addTimeTableSlot:28,458
-- (void) debugCurrentModule37,661
-- (void) dealloc59,1372
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/XMLTimeTableSlot.h,36
-@interface XMLTimeTableSlot 12,162
-
-/Users/xuyecheng/Documents/ios/iPlan/Classes/XMLTimeTableSlot.m,216
-@synthesize type;14,191
-@synthesize slot;15,209
-@synthesize day;16,227
-@synthesize time_start;17,244
-@synthesize time_end;18,268
-@synthesize venue;19,290
-@synthesize frequency;20,309
-- (void) debugSlot22,333
-
-/Users/xuyecheng/Documents/ios/iPlan/main.m,17
-int main(11,140

@@ -1,9 +1,9 @@
 //
 //  main.m
-//  iPlan
+//  AutoAuthenticateExample
 //
-//  Created by Yingbo Zhan on 11-6-18.
-//  Copyright 2011 NUS. All rights reserved.
+//  Created by HQ on 7/15/11.
+//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
